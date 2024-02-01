@@ -5,27 +5,27 @@ class Like extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const DefaultTabController(
+    return DefaultTabController(
       length: 2,
       child: Scaffold(
-        backgroundColor: Colors.black,
-        
-        appBar: TabBar(
-          padding: EdgeInsets.symmetric(vertical: 20),
-          labelColor: Colors.white,
-          unselectedLabelColor: Colors.grey,
-          dividerColor: Colors.black,
-          indicatorColor: Colors.white,
-          tabs: [
-            Tab(
-              text: 'Following',
+        appBar:AppBar(
+          backgroundColor: const Color.fromARGB(255, 203, 51, 51),
+          bottom:TabBar(
+              labelColor: Colors.white,
+              unselectedLabelColor: Colors.grey,
+              dividerColor: Colors.black,
+              indicatorColor: Colors.white,
+              dividerHeight: 0,
+              tabs: [
+                Tab(
+                  text: 'Following',
+                ),
+                Tab(
+                  text: 'You',
+                ),
+              ],
             ),
-            Tab(
-              text: 'You',
-            ),
-          ],
-        ),
-      ),
+          )),
     );
   }
 }
