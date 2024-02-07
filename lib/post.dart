@@ -115,7 +115,7 @@ class _PostState extends State<Post> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: List.generate(
-                        2,
+                        2,//blue dots ethrennam venam
                         (index) => Container(
                           margin: const EdgeInsets.only(top: 3.0, left: 5),
                           width: 6.0,

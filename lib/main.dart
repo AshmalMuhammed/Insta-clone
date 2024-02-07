@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:instagramui/like.dart';
+import 'package:instagramui/login1.dart';
+
+
+
 
 
 
@@ -15,8 +18,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false, 
-      home:Like(
-      ),
+      home:Login1(),
+        
+      
       );
     
   }
